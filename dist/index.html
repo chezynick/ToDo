@@ -9,14 +9,37 @@ href = "style.css" />
 
 </header>
 <body>
+    
     <div id='container'>
-        <div id='leftBox'>
-       <input type='button' value='Add Project' id='addProject'/> 
-<div id='projects'></div>
+    <h1>The Big old To-Do list!</h1>    
+     <div id='new'>+ New To-Do Item</div>  
+     <div id='newForm'>
+         <label>Project</label>
+         <input type='textarea' class='textbox' id ='projectText' value='shopping'/>
+         <label>Title</label>
+         <input type='textarea' class='textbox' id='toDoText'/>
+         <label>Due Date?</label>
+         <input type='date'  id= 'dateText'/>
+         <label>urgent?</label>
+         <input type='checkbox' id='urgentBox'/>
+         
+     </div>
+<div id='projectBox'>
+    <div id='filterBox'>
+        <div class='filterBoxes'>View All</div>
+        <div class='filterBoxes'>Today</div>
+        <div class='filterBoxes'>Urgent</div>
+    </div>
+    <div id ='headerHolder'>
+    <div id='projectHeader'>PROJECTS</div>
+    </div>
+    <div id='projects'></div>
+    
 </div>
+
 <div id='toDo'></div>
 </div>
-<input type='button' value='add item to this list' id='addToDo'/>
+<form id='form'></form>
 </body>
 <script src='main.js'>
 
